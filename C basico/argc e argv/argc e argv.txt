@@ -1,0 +1,18 @@
+/*
+Os parâmetros argc e argv dão ao programador acesso à linha 
+de comando com a qual o programa foi chamado.
+
+O argc (argument count) é um inteiro e possui o número de args 
+com os quais a função main() foi chamada na linha de comando.
+
+O argv (argument values) é um vetor de strings. 
+
+Cada string deste vetor é um dos parâmetros da linha de comando. 
+É para saber quantos elementos temos em argv que temos argc.
+*/
+
+// O programa a seguir faz o uso de argc e argv. 
+// Receberemos da linha de comando o dia, mês e ano correntes
+// Imprimiremos a data em formato apropriado
+// no terminal colocaremos por exemplo, data 19 04 22 e o programa imprimira 19 de abril de 2022
+// Vamos ao exemplo:
