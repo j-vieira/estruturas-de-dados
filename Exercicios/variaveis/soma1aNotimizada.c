@@ -2,25 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 
+//soma dos termos PA: ((a1+an)*n)/2
 long long int CalculaSoma(int n) {
-	long long int soma = 0;
-	
-	for(int i=1; i<=n; i++){
-		soma = soma+i;
-	}
-	
-	return soma;
+	long long int s = (1+n);
+	s = s*n/2;
+	return s;
 }
 
 int main() {
-	clock_t tempo;
+    clock_t tempo;
     
     tempo = clock();
-
-	int n = 10000000;
-	printf("%lld\n", CalculaSoma(n));
-
-	tempo = clock()-tempo; //final-inicial
+	
+    int n=10000000;
+    printf("%lld\n", CalculaSoma(n));
+    
+    tempo = clock()-tempo; //final-inicial
 
     printf("Tempo de execucao: %lf\n", ((double)tempo)/((CLOCKS_PER_SEC/1000)));
 }
