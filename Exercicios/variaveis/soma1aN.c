@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-long long int CalculaSoma(int n) {
+long long int calculaSoma(int n) {
 	long long int soma = 0;
 	
 	for(int i=1; i<=n; i++){
@@ -18,7 +18,7 @@ int main() {
     tempo = clock();
 
 	int n = 10000000;
-	printf("%lld\n", CalculaSoma(n));
+	printf("%lld\n", calculaSoma(n));
 
 	tempo = clock()-tempo; //final-inicial
 

@@ -3,7 +3,7 @@
 #include <time.h>
 
 //soma dos termos PA: ((a1+an)*n)/2
-long long int CalculaSoma(int n) {
+long long int calculaSoma(int n) {
 	long long int s = (1+n);
 	s = s*n/2;
 	return s;
@@ -15,7 +15,7 @@ int main() {
     tempo = clock();
 	
     int n=10000000;
-    printf("%lld\n", CalculaSoma(n));
+    printf("%lld\n", calculaSoma(n));
     
     tempo = clock()-tempo; //final-inicial
 
